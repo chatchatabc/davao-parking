@@ -12,7 +12,8 @@ class User {
 
 class Vehicle {
  long id
- long owner_id
+ long user_id
+ int relationship
  String brand
  String model
  String plate
