@@ -17,6 +17,11 @@ Parking in Davao City
 * User can register a vehicle
 * User can book a parking lot
 * User can make a car moving request
+ 
+# Use Cases
+
+* User uses mobile app to view the list of parking lots
+* Parking lot owner uses H5 site to register a parking lot
 
 # Requirements
 
