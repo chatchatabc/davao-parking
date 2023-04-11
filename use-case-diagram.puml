@@ -1,0 +1,27 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+:User: as User
+:ParkingLot Owner: as ParkingLotOwner
+
+package Mobile {
+  usecase "Mobile App" as UserMobileApp
+  usecase "Owner Mobile App" as OwnerMobileApp
+}
+
+package Web {
+  usecase "Parking API" as ParkingAPI
+  usecase "Parking Admin" as ParkingAdmin
+}
+
+User --> UserMobileApp
+ParkingLotOwner --> OwnerMobileApp
+
+UserMobileApp --> ParkingAPI: REST API
+OwnerMobileApp --> ParkingAPI: REST API
+
+Admin ---> ParkingAdmin: Web
+ParkingAdmin --> (Parking Domain)
+
+ParkingAPI --> (Parking Domain)
+@enduml
