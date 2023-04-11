@@ -1,0 +1,118 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class User {
+ long id
+ String realName
+ String phone
+ int flag
+ Date createdAt
+}
+
+class Vehicle {
+ long id
+ long owner_id
+ String brand
+ String model
+ String plate
+ int type
+ int status
+ Date createdAt
+}
+
+class ParkingRate {
+ int id
+ String name
+ int first_hour
+ int every_hour
+ int first_day
+ int every_day
+ int unit
+ String comment
+}
+
+class ParkingLot {
+ long id
+ int rate_id
+ long owner_id
+ int type
+ String name
+ String address
+ double latitude
+ double longitude
+ String description
+ int business_hours_id
+ int total_slot
+ int available_slot
+ int status
+ Date createdAt
+ Date updatedAt
+}
+
+class BusinessHours {
+   int id
+   String name
+   int holiday_start
+   int holiday_end
+   int mon_start
+   int mon_end
+   int tue_start
+   int tue_end
+}
+
+class ParkingLotPhoto {
+ long id
+ long lot_id
+ String url
+ String alt
+}
+
+class ParkingTransaction {
+  long id
+  long user_id
+  long lot_id
+  Date entry_time
+  Date exit_time
+  int amount
+  int unit
+  int status
+  String comment
+}
+
+class PointOfInterest {
+  long id
+  String name
+  String address
+  double latitude
+  double longitude
+  String description
+  int type
+}
+
+class VehicleMovingRequest {
+   long id
+   long requester_id
+   String plate
+   double latitude
+   double longitude
+   String comment
+   String photos
+   int status
+   Date createdAt
+   Date updatedAt
+}
+
+User "1" -- "1..*" Vehicle: Register
+User "1" -- "1..*" ParkingLot: Own
+User "1" -- "1..*" VehicleMovingRequest: Call service
+User "1" -- "1..*" ParkingTransaction
+ParkingTransaction "1" -- "1" ParkingLot
+
+ParkingLot "1" -- "1..*" ParkingLotPhoto: photos
+ParkingLot "1" -- "1" ParkingRate: fee rate
+ParkingLot "1" -- "1" BusinessHours: business hours
+
+PointOfInterest "1" --- "1..*" ParkingLot
+
+
+@enduml
