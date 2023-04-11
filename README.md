@@ -22,6 +22,9 @@ Parking in Davao City
 
 * User uses mobile app to view the list of parking lots
 * Parking lot owner uses app to register a parking lot
+* Admin uses browser to manage system.
+
+~[Use Case diagram](docs/use-case-diagram.png)
 
 # Tech Stack
 
