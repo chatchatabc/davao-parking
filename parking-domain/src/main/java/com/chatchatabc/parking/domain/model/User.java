@@ -1,14 +1,24 @@
 package com.chatchatabc.parking.domain.model;
 
+import jakarta.persistence.*;
+
 import java.time.LocalDateTime;
 
+@Entity
+@Table(name = "users")
 public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "real_name")
     private String realName;
     private String phone;
+    @Column(name = "driver_license")
     private String driverLicense;
     private int flag;
+    @Column(name = "created_at")
     private LocalDateTime createdAt;
+    @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
     public Long getId() {
