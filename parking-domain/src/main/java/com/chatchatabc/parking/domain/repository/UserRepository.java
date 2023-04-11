@@ -1,9 +1,12 @@
 package com.chatchatabc.parking.domain.repository;
 
+import com.chatchatabc.parking.domain.model.User;
+import org.springframework.data.repository.CrudRepository;
+
 /**
- * Created with IntelliJ IDEA.
+ * User repository
  *
- * @author linux_china
+ * @author jackie
  */
-public interface UserRepository {
+public interface UserRepository extends CrudRepository<User, Long> {
 }
