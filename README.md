@@ -21,7 +21,7 @@ Parking in Davao City
 # Use Cases
 
 * User uses mobile app to view the list of parking lots
-* Parking lot owner uses H5 site to register a parking lot
+* Parking lot owner uses app to register a parking lot
 
 # Tech Stack
 
