@@ -5,6 +5,7 @@ class User {
  long id
  String realName
  String phone
+ String driverLicense
  int flag
  Date createdAt
 }
