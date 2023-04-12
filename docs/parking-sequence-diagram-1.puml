@@ -1,6 +1,8 @@
 @startuml
 'https://plantuml.com/sequence-diagram
 
+title Check-in and Check-out by vehicle QR code
+
 autonumber
 
 group Check-in
