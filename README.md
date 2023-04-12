@@ -26,6 +26,19 @@ Supply demand matching system for parking lots in Davao City from Mobile.
 * Parking lot owner uses app to register a parking lot
 * Admin uses browser to manage system.
 
+## QR Code Design
+
+#### QR Code for Vehicle
+
+* Vehicle UUID
+* Register UUID
+* Plate Number
+
+#### QR Code for Parking Lot
+
+* Parking Lot UUID
+* Owner UUID
+
 ![Use Case diagram](docs/use-case-diagram.png)
 
 # Tech Stack
@@ -52,6 +65,6 @@ Spring Boot 3.0 with REST API
 * Web Site: Astro
 
 # References
-         
-* Kotlin: https://kotlinlang.org/        
+
+* Kotlin: https://kotlinlang.org/
 * Kotlin Multiplatform Mobile: https://kotlinlang.org/lp/mobile/
