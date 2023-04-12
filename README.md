@@ -1,6 +1,8 @@
 Parking in Davao City
 ======================
 
+Supply demand matching system for parking lots in Davao City from Mobile.
+
 # Vocabulary
 
 * User: a person who uses the system
@@ -33,10 +35,20 @@ Parking in Davao City
 * Spring Data JPA
 * Maven 3.9
 * PostgreSQL 15
+* Kotlin Multiplatform Mobile: https://kotlinlang.org/lp/mobile/
 
-# Requirements
+### Mobile Apps
 
-* Map marker for parking lot
+Kotlin Multiplatform Mobile
+
+### Backend
+
+Spring Boot 3.0 with REST API
+
+### FrontEnd
+
+* Admin Console: ReactJS
+* Web Site: Astro
 
 # References
  
