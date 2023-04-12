@@ -3,6 +3,7 @@
 
 class User {
  long id
+ String uuid
  String realName
  String phone
  String driverLicense
@@ -12,7 +13,8 @@ class User {
 
 class Vehicle {
  long id
- long user_id
+ String uuid
+ long register_id
  int relationship
  String brand
  String model
@@ -35,6 +37,7 @@ class ParkingRate {
 
 class ParkingLot {
  long id
+ String uuid
  int rate_id
  long owner_id
  int type
