@@ -31,6 +31,7 @@ Supply demand matching system for parking lots in Davao City from Mobile.
 # Tech Stack
 
 * Java 17
+* Kotlin 1.8.20
 * Spring Boot 3.0
 * Spring Data JPA
 * Maven 3.9
@@ -51,4 +52,6 @@ Spring Boot 3.0 with REST API
 * Web Site: Astro
 
 # References
- 
+         
+* Kotlin: https://kotlinlang.org/        
+* Kotlin Multiplatform Mobile: https://kotlinlang.org/lp/mobile/
