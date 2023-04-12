@@ -63,6 +63,16 @@ Spring Boot 3.0 with REST API
 
 * Admin Console: ReactJS
 * Web Site: Astro
+         
+# Car Moving Service
+ 
+Call LTO API to get car and owner information, then send SMS to the owner.
+
+* Plate number of the vehicle
+* Car Make and model
+* Manufacturing year
+* Car color
+* Car owner name and phone
 
 # References
 
