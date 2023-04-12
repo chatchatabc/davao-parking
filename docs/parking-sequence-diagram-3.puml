@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+title Check-in and Check-out by anonymous mode
+
+autonumber
+
+group Check-in
+    Owner -> Anonymous: take a photo of plate number for check-in
+    Owner -> ParkingSystem: submit parking information with image
+    Owner <- ParkingSystem: return parking information
+    Owner -> ParkingSystem: Confirm check-in
+end
+
+autonumber
+
+group Check-out
+    Owner -> User: Find parking information from list
+    Owner -> ParkingSystem: select vehicle by photo for check-out
+    Owner <- ParkingSystem: return parking information, including parking fee
+    Owner -> ParkingSystem: Confirm check-out
+end
+@enduml
