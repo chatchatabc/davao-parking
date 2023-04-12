@@ -73,6 +73,10 @@ Call LTO API to get car and owner information, then send SMS to the owner.
 * Manufacturing year
 * Car color
 * Car owner name and phone
+            
+# Plate Number Recognition
+
+车牌识别: https://vision.aliyun.com/experience/detail?tagName=ocr&children=RecognizeLicensePlate&open-chat-mi=false
 
 # References
 
