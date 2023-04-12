@@ -1,0 +1,21 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+group Check-in
+    Owner -> User: scan vehicle QR code for check-in
+    Owner -> ParkingSystem: submit parking information
+    Owner <- ParkingSystem: return vehicle information
+    Owner -> ParkingSystem: Confirm check-in
+end
+
+autonumber
+
+group Check-out
+    Owner -> User: Scan vehicle QR code for check-out
+    Owner -> ParkingSystem: query parking information
+    Owner <- ParkingSystem: return parking information, including parking fee
+    Owner -> ParkingSystem: Confirm check-out
+end
+@enduml
