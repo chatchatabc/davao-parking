@@ -75,8 +75,10 @@ Call LTO API to get car and owner information, then send SMS to the owner.
 * Car owner name and phone
             
 # Plate Number Recognition
-
-车牌识别: https://vision.aliyun.com/experience/detail?tagName=ocr&children=RecognizeLicensePlate&open-chat-mi=false
+                     
+* 车牌识别(Tencent Cloud): https://cloud.tencent.com/document/product/866/36211
+* 车牌识别(Alibaba Cloud): https://vision.aliyun.com/experience/detail?tagName=ocr&children=RecognizeLicensePlate&open-chat-mi=false
+* Vehicle registration plates of the Philippines: https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_the_Philippines
 
 # References
 
