@@ -27,7 +27,7 @@ class Vehicle {
 class ParkingRate {
  int id
  String name
- int first_hour
+ int free_minutes
  int every_hour
  int first_day
  int every_day
